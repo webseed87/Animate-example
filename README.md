@@ -4,8 +4,8 @@ class문법을 사용한 animaite.js 생성 후 두가지 슬라이더 예제를
 
 
 `
-    export default class Animate {
-    constructor(selector, option){
+       export default class Animate {
+       constructor(selector, option){
         this.selector = selector;
         this.option = {duration:500, ...option};       
         this.startTime= performance.now();
@@ -59,7 +59,7 @@ class문법을 사용한 animaite.js 생성 후 두가지 슬라이더 예제를
         else{
             this.selector.style[this.option.prop] = `${result}px`;
         }
-    }
-}
+       }
+      }
 
 `
