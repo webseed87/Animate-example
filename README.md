@@ -3,7 +3,7 @@
 class문법을 사용한 animaite.js 생성 후 두가지 슬라이더 예제를 포함하고 있습니다.<br>
 
 
-export default class Animate {
+`export default class Animate {
     constructor(selector, option){
         this.selector = selector;
         this.option = {duration:500, ...option};       
@@ -60,4 +60,4 @@ export default class Animate {
         }
     }
 }
-
+`
