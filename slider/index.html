@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="module" src="./js/animaite.mjs"></script>
+    <script defer type="module" src="./js/main.mjs"></script>
+    <script type='module'>
+        import Slider from './js/main.mjs';
+        window.addEventListener('load',()=>{
+           
+            new Slider('#slider',{
+                panel: '.panel',
+                btns: '.btns li',
+                ring: '#ring',
+                duration: 1000
+            });        
+        })
+    </script>
+</head>
+<body>
+    <section id="slider">
+        <ul class="panel">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class="btns">
+            <li class="on"><a href="#">Sliver</a></li>
+            <li><a href="#">Deep Yellow</a></li>
+            <li><a href="#">Green</a></li>
+            <li><a href="#">Sky Blue</a></li>
+            <li><a href="#">Hot Perple</a></li>
+        </ul>
+        <img src="img/circle1.png" id="ring">
+    </section>
+</body>
+</html>
